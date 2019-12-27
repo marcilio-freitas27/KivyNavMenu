@@ -11,32 +11,20 @@ Builder.load_string('''
         anim_type: 'slide_above_anim'
         BoxLayout:
             orientation: 'vertical'
-            canvas:
-                Color:
-                    rgba: (1,1,1,1)
-                Rectangle:
-                    pos: self.pos
-                    size: self.size
             Label:
-                text: "Menu"
-                #black color
-                color: 0,0,0,1
+                text: 'Menu'
             Button:
-                text:"First"
+                text:'First'
                 on_release: root.change_text(self)
             Button:
-                text:"Second"
+                text:'Second'
                 on_release: root.change_text(self)
             Button:
-                text:"Third"
+                text:'Third'
                 on_release: root.change_text(self)
         # Initial screen
         BoxLayout:
             orientation: 'vertical'
-            canvas:
-                # white color
-                Color:
-                    rgb: (1,1,1)
             ActionBar:
                 ActionView:
                     ActionPrevious:
