@@ -22,18 +22,19 @@ Builder.load_string('''
                 #black color
                 color: 0,0,0,1
             Button:
-                text:"Primeiro"
+                text:"First"
                 on_release: root.change_text(self)
             Button:
-                text:"Segundo"
+                text:"Second"
                 on_release: root.change_text(self)
             Button:
-                text:"terceiro"
-                on_release: root.change_name(self)
+                text:"Third"
+                on_release: root.change_text(self)
         # Initial screen
         BoxLayout:
             orientation: 'vertical'
             canvas:
+                # white color
                 Color:
                     rgb: (1,1,1)
             ActionBar:
